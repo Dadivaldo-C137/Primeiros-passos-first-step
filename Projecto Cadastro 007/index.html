@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style01.css">
+
+    <link rel="icon" href="imagens/icons8-login-16.png">
+    
+    <title>Cadastre-se</title>
+</head>
+<body>
+    <!--Inicio container-->
+    <div id="container">
+        <!--Parte das imagem e do cabeçalho-->
+       <div id="cabeçalho"> 
+            <div id="img"> 
+                <img src="imagens/undraw_sign_up_n6im.svg" alt="Cadastre-se">
+            </div>   
+       </div>
+        <!--Inicio do formulário-->
+       <div id="formulário">
+            <span id="cadastro">
+               <h1>Cadastre-se já</h1>
+            </span>
+            
+            <form action="#">
+                <!--Inicio dos inputs--> 
+                <div id="main">
+                    <!--First name-->
+                    <div class="inputs">
+                        <input type="text" placeholder="Insira o Primeiro nome" name="First_name" required>
+                    </div>
+                    <!--Last name-->
+                    <div class="inputs">
+                        <input type="text" placeholder="Insira o seu Último nome" name="Last_name" required>
+                    </div>
+                    <!--HBD, níver-->
+                    <div class="inputs">
+                        <input type="date" placeholder="Insira a sua data de nascimento" name="date" max="2018-12-31" required>
+                    </div>
+                    <!--E-mail-->
+                    <div class="inputs">
+                        <input type="email" placeholder="Insira o seu e-mail" name="E-mail" required>
+                    </div>
+                    <!--Telefone-->
+                    <div class="inputs">
+                        <input type="tel" placeholder="(+xx) xxxx-xxxx" name="contact">
+                    </div>
+
+                    <!--dados do país-->
+                    <div class="inputs">
+                        <input list="countries" id="country" name="countries" placeholder="Escolha o seu país" required>
+                        <datalist id="countries">
+                        
+                        <option value="África do Sul"> &#x1F1FF;&#x1F1E6;</option>
+                        <option value="Alemanha">&#x1F1E9;&#x1F1EA;</option>
+                        <option value="Angola"> &#x1F1E6;&#x1F1F4;</option>
+                        <option value="Brasil"> &#x1F1E7;&#x1F1F7;</option>
+                        <option value="Canadá"> &#x1F1E8;&#x1F1E6;</option>
+                        <option value="China">&#x1F1E8;&#x1F1F3;</option>
+                        <option value="EUA">&#x1F1FA;&#x1F1F8;</option>
+                        <option value="França"> &#x1F1EB;&#x1F1F7;</option>
+                        <option value="Inglaterra">&#x1F1EC;&#x1F1E7;</option>
+                        <option value="Índia">&#x1F1EE;&#x1F1F3;</option>
+                        <option value="Japão">&#x1F1EF;&#x1F1F5;</option>
+                        <option value="México">&#x1F1F2;&#x1F1FD;</option>
+                        <option value="Portugal">&#x1F1F5;&#x1F1F9;</option>
+                        <option value="Taiwan">&#x1F1F9;&#x1F1FC;</option>
+
+                        </datalist>
+                    </div>
+                  <!--Fim inputs-->
+                </div><!--Div main-->
+                <!--Type Radio-->
+                <div id="género">
+                     <div id="title">
+                        <h3>Género</h3>
+                     </div>
+                     <!--M-->
+                     <div class="generos">
+                        <input type="radio" name="solteiro" value="M" id="gen">
+                        <label for="gen" class="gn">Masculino</label>
+                     </div>
+                     <!--F-->
+                     <div class="generos">
+                        <input type="radio" name="solteiro" value="F" id="gen2">
+                        <label for="gen2" class="gn">Femenino</label>
+                     </div>
+                     <!--LGBTQIAPN+-->
+                     <div class="generos">
+                        <input type="radio" name="solteiro" value="O" id="gen3">
+                        <label for="gen3" class="gn">Outros</label>
+                     </div>
+                 
+                </div>
+                <!--Botão para enviar-->
+                <div id="botão">
+                    <button>Cadastrar-se</button>
+                </div>
+            </form>
+           <!--Fim formulário-->
+        </div> 
+    </div>    
+    <!--Fim container-->
+</body>
+</html>
